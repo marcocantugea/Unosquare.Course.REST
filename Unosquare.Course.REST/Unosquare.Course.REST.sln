@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Course.REST", "Unosquare.Course.REST\Unosquare.Course.REST.csproj", "{3CACE769-B29E-4681-8EEE-6170D6BDB1DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Course.REST.CoreLib", "Unosquare.Course.REST.CoreLib\Unosquare.Course.REST.CoreLib.csproj", "{87D5BA05-7B9D-404E-971A-D1AE800F3D75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CACE769-B29E-4681-8EEE-6170D6BDB1DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CACE769-B29E-4681-8EEE-6170D6BDB1DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CACE769-B29E-4681-8EEE-6170D6BDB1DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CACE769-B29E-4681-8EEE-6170D6BDB1DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1C92C74-2767-42FF-8730-5DE9B8AA6EAA}
+	EndGlobalSection
+EndGlobal
