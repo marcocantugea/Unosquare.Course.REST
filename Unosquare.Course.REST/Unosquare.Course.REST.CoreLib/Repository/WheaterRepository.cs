@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Unosquare.Course.REST.CoreLib.Interfaces;
+using Unosquare.Course.REST.Models.Interfaces;
 using System.Linq;
-using Unosquare.Course.REST.CoreLib.Models;
+using Unosquare.Course.REST.Models;
 
 namespace Unosquare.Course.REST.CoreLib.Repository
 {
     public class WheaterRepository
     {
-        public IEnumerable<Interfaces.IModel> GetWheaterInfo()
+        public IEnumerable<IModel> GetWheaterInfo()
         {
             
             var rng = new Random();

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Unosquare.Course.REST.CoreLib\Unosquare.Course.REST.CoreLib.csproj" />
+    <ProjectReference Include="..\Unosquare.Course.REST.Models\Unosquare.Course.REST.Models.csproj" />
   </ItemGroup>
 
 

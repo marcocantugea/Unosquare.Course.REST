@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
-using Unosquare.Course.REST.CoreLib.Models;
+using Unosquare.Course.REST.Models.Interfaces;
+using Unosquare.Course.REST.Models;
 
 namespace Unosquare.Course.REST.CoreLib.DataAccess
 {
@@ -25,9 +26,27 @@ namespace Unosquare.Course.REST.CoreLib.DataAccess
             return FilePath + fileName;
         }
 
+        public void saveJsonData(IEnumerable<IModel> dataToSave)
+        {
+            string jsonString = System.Text.Json.JsonSerializer.Serialize<IEnumerable<IModel>>(dataToSave);
+            saveFileInfo(jsonString);
+        }
+
+        public void saveJsonWarehouseData(List<WarehouseInfo> datatoSave)
+        {
+
+            string jsonString = System.Text.Json.JsonSerializer.Serialize<List<WarehouseInfo>>(datatoSave, new JsonSerializerOptions { WriteIndented = true });
+            saveFileInfo(jsonString);
+        }
+
         private string getFileContent()
         {
             return System.IO.File.ReadAllText(getDataFile());
+        }
+
+        private void saveFileInfo(string content)
+        {
+            System.IO.File.WriteAllText(getDataFile(), content);
         }
     }
 }

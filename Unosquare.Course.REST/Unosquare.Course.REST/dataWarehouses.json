@@ -1,27 +1,37 @@
 [
   {
+    "warehouseName": "Main Cleveland Warehouse",
     "warehouseCodeName": "MCW",
-    "warehouseLocation": "Ave 23 rd ",
-    "warehouseName": "Main Cleveland Warehouse"
+    "warehouseLocation": "Ave 23 rd "
   },
   {
+    "warehouseName": "Mexico Puebla Warehouse",
     "warehouseCodeName": "MPW",
-    "warehouseLocation": "5 de Mayo #45 A",
-    "warehouseName": "Mexico Puebla Warehouse"
+    "warehouseLocation": "5 de Mayo #45 A"
   },
   {
+    "warehouseName": "Ciudad de Mexico Warehouse",
     "warehouseCodeName": "CMW",
-    "warehouseLocation": "Ave Juarez KM 34",
-    "warehouseName": "Ciudad de Mexico Warehouse"
+    "warehouseLocation": "Ave Juarez KM 34"
   },
   {
+    "warehouseName": "Monterrey City Warehouse",
     "warehouseCodeName": "MCW",
-    "warehouseLocation": "Mitras centro",
-    "warehouseName": "Monterrey City Warehouse"
+    "warehouseLocation": "Mitras centro"
   },
   {
+    "warehouseName": "Guadalajara Main Warehouse",
     "warehouseCodeName": "GMW",
-    "warehouseLocation": "Jacarandas 45 1-A",
-    "warehouseName": "Guadalajara Main Warehouse"
+    "warehouseLocation": "Jacarandas 45 1-A"
+  },
+  {
+    "warehouseName": "Reynosa Warehouse Dist Center",
+    "warehouseCodeName": "RWDC",
+    "warehouseLocation": "localizado en reynosa tamps"
+  },
+  {
+    "warehouseName": "Veracruz Warehouse Dist Center",
+    "warehouseCodeName": "VWDC",
+    "warehouseLocation": "localizado en veracruz"
   }
 ]

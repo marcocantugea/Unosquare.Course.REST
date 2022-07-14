@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Unosquare.Course.REST.CoreLib.Interfaces;
+using Unosquare.Course.REST.Models.Interfaces;
 
-namespace Unosquare.Course.REST.CoreLib.Models
+namespace Unosquare.Course.REST.Models
 {
     public class WarehouseInfo : Interfaces.IModel 
     {

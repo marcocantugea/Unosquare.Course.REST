@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Unosquare.Course.REST.CoreLib.Interfaces;
+using Unosquare.Course.REST.Models.Interfaces;
 using Unosquare.Course.REST.CoreLib.Repository;
 
 
