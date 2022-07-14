@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Course.REST", "Un
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unosquare.Course.REST.CoreLib", "Unosquare.Course.REST.CoreLib\Unosquare.Course.REST.CoreLib.csproj", "{87D5BA05-7B9D-404E-971A-D1AE800F3D75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingProyect", "TestingProyect\TestingProyect.csproj", "{1682ACF1-2739-4CF8-BE72-5DF8A077B93A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87D5BA05-7B9D-404E-971A-D1AE800F3D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1682ACF1-2739-4CF8-BE72-5DF8A077B93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1682ACF1-2739-4CF8-BE72-5DF8A077B93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1682ACF1-2739-4CF8-BE72-5DF8A077B93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1682ACF1-2739-4CF8-BE72-5DF8A077B93A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

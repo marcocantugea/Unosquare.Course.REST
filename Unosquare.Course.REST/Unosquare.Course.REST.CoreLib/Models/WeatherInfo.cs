@@ -5,7 +5,7 @@ using Unosquare.Course.REST.CoreLib.Interfaces;
 
 namespace Unosquare.Course.REST.CoreLib.Models
 {
-    internal class WeatherInfo : IModel
+    public class WeatherInfo : Interfaces.IModel
     {
         public DateTime date { set; get; }
         public int TemperatureC { set; get; }

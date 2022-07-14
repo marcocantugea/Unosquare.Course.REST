@@ -1,0 +1,27 @@
+[
+  {
+    "warehouseCodeName": "MCW",
+    "warehouseLocation": "Ave 23 rd ",
+    "warehouseName": "Main Cleveland Warehouse"
+  },
+  {
+    "warehouseCodeName": "MPW",
+    "warehouseLocation": "5 de Mayo #45 A",
+    "warehouseName": "Mexico Puebla Warehouse"
+  },
+  {
+    "warehouseCodeName": "CMW",
+    "warehouseLocation": "Ave Juarez KM 34",
+    "warehouseName": "Ciudad de Mexico Warehouse"
+  },
+  {
+    "warehouseCodeName": "MCW",
+    "warehouseLocation": "Mitras centro",
+    "warehouseName": "Monterrey City Warehouse"
+  },
+  {
+    "warehouseCodeName": "GMW",
+    "warehouseLocation": "Jacarandas 45 1-A",
+    "warehouseName": "Guadalajara Main Warehouse"
+  }
+]

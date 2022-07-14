@@ -9,7 +9,7 @@ namespace Unosquare.Course.REST.CoreLib.Repository
 {
     public class WheaterRepository
     {
-        public IEnumerable<IModel> GetWheaterInfo()
+        public IEnumerable<Interfaces.IModel> GetWheaterInfo()
         {
             
             var rng = new Random();
