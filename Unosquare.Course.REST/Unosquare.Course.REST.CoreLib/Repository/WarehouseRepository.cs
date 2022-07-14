@@ -23,9 +23,10 @@ namespace Unosquare.Course.REST.CoreLib.Repository
             return warehouse;
         }
 
-        public void saveWarehousesInformation(List<WarehouseInfo> data)
+        public void saveWarehousesInformation(List<WarehouseInfo> data,string alternativeFilePath="./")
         {
             JsonDataAccess jsonData = new JsonDataAccess();
+            jsonData.FilePath = alternativeFilePath;
             jsonData.saveJsonWarehouseData(data);
 
         }

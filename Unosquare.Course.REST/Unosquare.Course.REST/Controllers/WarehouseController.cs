@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Unosquare.Course.REST.Models;
-using Unosquare.Course.REST.CoreLib.Repository;
-using Unosquare.Course.REST.CoreLib.Services;
 using Unosquare.Course.REST.CoreLib.Contracts;
+using System.Text.RegularExpressions;
 
 namespace Unosquare.Course.REST.Controllers
 {
@@ -20,25 +19,18 @@ namespace Unosquare.Course.REST.Controllers
             warehouseService = warehouseservice;
         }
 
-        public IActionResult Index()
+        public IEnumerable<WarehouseInfo> Index()
         {
-            return View();
-        }
-
-        [HttpGet("warehouses")]
-        public IEnumerable<WarehouseInfo> GetWarehouses()
-        {
-
             return warehouseService.getListOfWarehouses("./");
         }
 
-        [HttpGet("info/{codeWarehouse}")]
+        [HttpGet("view/{codeWarehouse}")]
         public WarehouseInfo getWarehouseInfo([FromRoute] string codeWarehouse)
         {
             return warehouseService.getWarehouseInfo(codeWarehouse,"./");
         }
 
-        [HttpPost("create")]
+        [HttpPost("add")]
         public IActionResult addNewWarehouse([FromBody]WarehouseInfo newWarehouseInfo)
         {
             if (newWarehouseInfo == null) return this.BadRequest();
@@ -58,5 +50,30 @@ namespace Unosquare.Course.REST.Controllers
             }
             return this.Ok();
         }
+
+        [HttpGet("search")]
+        public IEnumerable<WarehouseInfo> searchWarehouse([FromQuery]string code, [FromQuery] string name )
+        {
+            List<WarehouseInfo> dataSaved = warehouseService.getListOfWarehouses("./");
+
+            if (name != null && code != null)
+            {
+                List<WarehouseInfo> filterboth = dataSaved.FindAll(item => ((Regex.IsMatch(item.warehouseName, @"" + name, RegexOptions.Singleline | RegexOptions.IgnoreCase)) && string.Equals(item.warehouseCodeName, code, System.StringComparison.OrdinalIgnoreCase)));
+                return filterboth;
+            }
+
+            if (name != null)
+            {
+                List<WarehouseInfo> filterByName = dataSaved.FindAll(item => Regex.IsMatch(item.warehouseName, @""+name, RegexOptions.Singleline | RegexOptions.IgnoreCase));
+                return filterByName;
+            }
+
+           
+
+            List<WarehouseInfo> filter = dataSaved.FindAll(item => string.Equals(item.warehouseCodeName,code,System.StringComparison.OrdinalIgnoreCase));
+            return filter;
+        }
+
+        
     }
 }

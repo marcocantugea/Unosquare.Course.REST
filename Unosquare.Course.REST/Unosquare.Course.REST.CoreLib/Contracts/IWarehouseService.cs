@@ -10,6 +10,6 @@ namespace Unosquare.Course.REST.CoreLib.Contracts
     {
         List<WarehouseInfo> getListOfWarehouses(string alternativeFilePath = null);
         WarehouseInfo getWarehouseInfo(string codename, string alternativeFilePath = null);
-        void saveWarehousesInformation(List<WarehouseInfo> data);
+        void saveWarehousesInformation(List<WarehouseInfo> data, string alternativeFilePath = "./");
     }
 }

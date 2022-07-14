@@ -21,9 +21,10 @@ namespace Unosquare.Course.REST.CoreLib.Services
             return repository.getWarehouseInfo(codename, alternativeFilePath);
         }
 
-        public void saveWarehousesInformation(List<WarehouseInfo> data)
+        public void saveWarehousesInformation(List<WarehouseInfo> data, string alternativeFilePath = "./")
         {
-            repository.saveWarehousesInformation(data);
+
+            repository.saveWarehousesInformation(data,alternativeFilePath);
         }
     }
 }
